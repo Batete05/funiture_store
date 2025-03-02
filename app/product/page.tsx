@@ -1,13 +1,13 @@
-import NavBar from "@/app/utils/NavBar";
+import NavBar from "../components/utils/NavBar";
 import React from "react";
 import { FiArrowLeft } from "react-icons/fi";
 import { FaStar } from "react-icons/fa";
 import { FaStarHalf } from "react-icons/fa";
-import ColorGrind from "@/app/utils/ColorGrind";
-import Button from "@/app/utils/Buttons";
-import WishList from "@/app/utils/WishList";
-import Account from "@/app/utils/Account";
-
+import ColorGrind from "../components/utils/ColorGrind";
+import Button from "../components/utils/Buttons";
+import WishList from "../components/utils/WishList";
+import Account from "../components/utils/Account";
+import { ChairGallery } from "../components/gallery/ChairGallery";
 const Product = () => {
   return (
     <>
@@ -57,13 +57,14 @@ const Product = () => {
           </div>
           </div>
         </div>
-        <div>
-            <div>
+        <div className="ml-[250px]">
+            {/* <div>
                 <div>
                 <img src="/Rectangle 1.svg"></img>
                 <img src="/Meryl_Lounge_Chair_Teal_3 1.svg"></img>
                 </div>
-            </div>
+            </div> */}
+            <ChairGallery />
         </div>
       </div>
     </>

@@ -31,7 +31,9 @@ const NavBar = () => {
           </div>
           <div className="border border-gray-300 h-[30px]" />
           <div>
+            <a href="/cart">
             <LuShoppingCart className="text-xl" />
+            </a>
           </div>
         </div>
       </div>
