@@ -26,7 +26,7 @@ const Cart = ({
         <img src={image} alt={title} className="w-[200px] h-[200px]" />
         <div className="grid grid-cols-3 gap-12 ">
           <div className="">
-            <h3 className="font-bold text-xl">{title}</h3>
+            <h3 className="font-bold text-l ">{title}</h3>
             <p className="text-[#A2A3B1] text-s font-semibold pt-3">
               Color <span className="text-[#17183B] text-m">{subtitle}</span>
             </p>
@@ -62,7 +62,7 @@ export const CartCard = () => {
               action="Remove"
               price="$567890987"
             />
-            <div className="border-b border-gray-300 w-[750px] ml-[30px]" />
+            <div className="border-b border-gray-300 w-[750px] ml-[30px] pt-4" />
             <Cart
               image="/photo/Meryl_Lounge_Chair_Teal_3 2.svg"
               title="Osmond Armchair"
@@ -72,10 +72,12 @@ export const CartCard = () => {
               price="$567890987"
             />
           </div>
+          <div className="pt-4">
           <Discount />
+          </div>
         </div>
         </div>
-        <div className="w-[800px]">
+        <div className="mt-[30px]">
         <OrderSummary />
         </div>
       </div>
