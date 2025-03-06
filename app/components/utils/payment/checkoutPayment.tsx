@@ -10,7 +10,7 @@ const CheckoutSteps = ({ currentStep }) => {
   ];
 
   return (
-    <div className="flex justify-center items-center p-6 bg-gray-100">
+    <div className="flex  items-center p-6 ml-[30px] mt-[0px] w-[400px] ">
       {steps.map((step, index) => (
         <React.Fragment key={step.id}>
           {/* Step Name */}
